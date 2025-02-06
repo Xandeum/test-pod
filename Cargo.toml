@@ -1,0 +1,15 @@
+[package]
+name = "pod-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+zmq = "0.10.0"
+
+[[bin]]
+name = "receiver"
+path = "src/receiver.rs"
+
+[[bin]]
+name = "sender"
+path = "src/sender.rs"
