@@ -5,6 +5,9 @@ edition = "2021"
 
 [dependencies]
 zmq = "0.10.0"
+prost = "0.12"
+prost-types = "0.12" 
+solana-sdk = "2.1.13"
 
 [[bin]]
 name = "receiver"
@@ -13,3 +16,6 @@ path = "src/receiver.rs"
 [[bin]]
 name = "sender"
 path = "src/sender.rs"
+
+[build-dependencies]
+prost-build = "0.12" 
